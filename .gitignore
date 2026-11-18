@@ -1,0 +1,16 @@
+# Local transactions, generated tables and notebook displays
+/Data/
+/figures/
+/catboost_info/
+.ipynb_checkpoints/
+local-logs/
+*.log
+
+# Local Python and editor files
+.venv/
+.env
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+.DS_Store
