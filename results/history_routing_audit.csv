@@ -1,0 +1,3 @@
+profile_key,test_profiles,matched_training_profiles,hard_declines,fraud_hard_declined,legitimate_hard_declined,verification_requests,interventions,action_changed_vs_original,first_hit_rule_changed_vs_original
+Original text key,924,0,1665,1451,214,3272,4937,0,0
+Normalized birth date,924,908,1424,1281,143,3513,4937,245,917

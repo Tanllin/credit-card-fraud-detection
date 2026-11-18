@@ -1,0 +1,2 @@
+evaluation_dataset,rows,fraud_cases,fraud_rate,ROC-AUC,PR-AUC
+External fraud_test.csv,555719,2145,0.0038598644278853163,0.9965890701190768,0.862395293453275

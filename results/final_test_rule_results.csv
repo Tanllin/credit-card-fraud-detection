@@ -1,0 +1,9 @@
+triggered_rule,decision,transactions,fraud_cases,transaction_amount,fraud_amount,good_transactions,fraud_hit_rate,share_of_all_fraud
+CC1.1 Hard decline: extreme score + >=3 flags,Hard Decline,1665,1451,1178619.01,974963.79,214,0.8714714714714715,0.6764568764568765
+CC1.2 Soft decline: extreme score,Soft Decline,307,210,137401.74,64434.020000000004,97,0.6840390879478827,0.0979020979020979
+CC1.6 Soft decline: remaining medium score,Soft Decline,1793,127,231772.14,24006.31,1666,0.07083100948131622,0.05920745920745921
+CS1.2 Soft approve: lower-score activity,Soft Approve,18090,122,1667547.72,21354.08,17968,0.006744057490326147,0.05687645687645688
+CC1.5 Soft decline: interval anomaly + risky context,Soft Decline,457,88,46886.12,8643.91,369,0.1925601750547046,0.041025641025641026
+CC1.3 Soft decline: history uncertainty + risky context,Soft Decline,437,67,76964.13,6002.74,370,0.15331807780320367,0.031235431235431235
+CS1.1 Soft approve: score below T_low,Soft Approve,532692,48,34988415.87,12685.550000000001,532644,9.010835529724494e-05,0.022377622377622378
+CC1.4 Soft decline: new merchant + amount spike,Soft Decline,278,32,235296.38,21234.28,246,0.11510791366906475,0.014918414918414918

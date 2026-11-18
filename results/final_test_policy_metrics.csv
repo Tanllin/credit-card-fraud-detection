@@ -1,0 +1,2 @@
+policy,declined_or_verified,decision_rate,true_positives,false_positives,false_negatives,true_negatives,precision,recall,f1
+Frozen model-and-behavior rules,4937,0.008883986331221354,1975,2962,170,550612,0.40004051043143607,0.9207459207459208,0.5577520474442248
