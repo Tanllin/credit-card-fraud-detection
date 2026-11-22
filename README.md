@@ -47,7 +47,7 @@ The precision–recall curve shows what the team gives up as it widens the alert
 
 ### Follow-up study: a fixed daily verification queue
 
-In a separate local study, I replayed **195,723 purchases over 80 days** from the original training file. Each decision was final at arrival. Both policies could use up to **22 verifications and eight hard declines per day**. The four notebooks published here reproduce the six-month holdout above. The table below summarizes the subsequent development study.
+In [Notebook 05](05_Fraud_Policy_Validation.ipynb), I replayed **195,723 purchases over 80 days** from the original training file. Each decision was final at arrival. Both policies could use up to **22 verifications and eight hard declines per day**. This follow-up uses a separate development period. Notebook 04 reports the six-month holdout.
 
 | Arrival-order policy | Frauds flagged | Legitimate hard declines | Verifications | Modeled net benefit |
 | --- | ---: | ---: | ---: | ---: |
@@ -83,6 +83,13 @@ python run.py all
 
 If you already have the prepared files in `Data/raw/`, start with `python run.py all`. To run just the frozen holdout evaluation, use `python run.py evaluate`.
 
+**Reproduce Notebook 05.** After preparing the data, run the following commands in the project environment from the repository root. Select the project’s Python kernel and choose **Run All Cells**. The follow-up reads only `Data/raw/fraud_train.csv`. Sections 11–13 contain the arrival-order replay, the seven-day block bootstrap and the fallback comparison under the daily verification limit.
+
+```bash
+python -m pip install jupyterlab
+python -m jupyterlab 05_Fraud_Policy_Validation.ipynb
+```
+
 ## Repository structure
 
 | File or folder | What to look for |
@@ -91,6 +98,7 @@ If you already have the prepared files in `Data/raw/`, start with `python run.py
 | [02 · Model selection](02_Model_Selection.ipynb) | Chronological benchmarks and tuning |
 | [03 · Class imbalance](03_Class_Imbalance.ipynb) | Class weighting versus synthetic oversampling |
 | [04 · Final evaluation](04_Final_Test_Evaluation.ipynb) | Frozen policy, holdout results and customer-history audit |
+| [05 · Fraud policy validation](05_Fraud_Policy_Validation.ipynb) | Transaction-by-transaction replay, uncertainty in modeled benefit and fallback rules during outages |
 | [scripts/](scripts/) | Data preparation, threshold selection and results summary |
 | [results/](results/) | Aggregate tables and the holdout chart |
 | [run.py](run.py) · [requirements.txt](requirements.txt) | Stage runner and pinned dependencies |
